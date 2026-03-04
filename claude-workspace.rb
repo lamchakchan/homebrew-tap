@@ -5,21 +5,21 @@
 class ClaudeWorkspace < Formula
   desc "Platform engineering kit for deploying Claude Code AI agents"
   homepage "https://github.com/lamchakchan/claude-workspace"
-  version "0.22.0"
+  version "0.22.1-alpha.2.cc97122"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.0/claude-workspace_0.22.0_darwin_amd64.tar.gz"
-      sha256 "6cca79d085fbf72157010ae8016b88efcd62765a7fb12c3a9b4486a796cad187"
+      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.1-alpha.2.cc97122/claude-workspace_0.22.1-alpha.2.cc97122_darwin_amd64.tar.gz"
+      sha256 "71a4de7f2f1924fd56494fab683652c1ae543b650b3125f786f3b418985c8f4e"
 
       define_method(:install) do
         bin.install "claude-workspace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.0/claude-workspace_0.22.0_darwin_arm64.tar.gz"
-      sha256 "7faa68d95c061bda944687dec7650d8780b39681eac95be941118dfc01592e6f"
+      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.1-alpha.2.cc97122/claude-workspace_0.22.1-alpha.2.cc97122_darwin_arm64.tar.gz"
+      sha256 "4c01c749c05a4b3aadcf8f4e65a4aa3182060419a7f63ceaa387e9712f2a9a8a"
 
       define_method(:install) do
         bin.install "claude-workspace"
@@ -29,15 +29,15 @@ class ClaudeWorkspace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.0/claude-workspace_0.22.0_linux_amd64.tar.gz"
-      sha256 "b5b01800a9c6bc39889be5d9652595ad8cdb3c6b7ea02e5306e363b38b6985d1"
+      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.1-alpha.2.cc97122/claude-workspace_0.22.1-alpha.2.cc97122_linux_amd64.tar.gz"
+      sha256 "846b350b449bc3f79a9881985fc9aca223fac7f0a87108fbb54314a0ac572ee5"
       define_method(:install) do
         bin.install "claude-workspace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.0/claude-workspace_0.22.0_linux_arm64.tar.gz"
-      sha256 "8b4f593327f52bdb7d0f6aa0ff62d09ddffd3f7c64f82abb32068716e8893df7"
+      url "https://github.com/lamchakchan/claude-workspace/releases/download/v0.22.1-alpha.2.cc97122/claude-workspace_0.22.1-alpha.2.cc97122_linux_arm64.tar.gz"
+      sha256 "70f88528d0d4a3907e9cb8e44c63d897ef40215fcc0278a7e1c3725fcc745baa"
       define_method(:install) do
         bin.install "claude-workspace"
       end
